@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/K-chan/Desktop/Android Project/app/src/main/res/drawable-v24/custombuttonblackoval.xml" value="0.1" />
-        <entry key="..\:/Users/K-chan/Desktop/Android Project/app/src/main/res/layout/activity_login.xml" value="0.8104838709677419" />
+        <entry key="..\:/Users/K-chan/Desktop/Android Project/app/src/main/res/drawable/ic_launcher_background.xml" value="0.10925925925925926" />
+        <entry key="..\:/Users/K-chan/Desktop/Android Project/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Users/K-chan/Desktop/Android Project/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/K-chan/Desktop/Android Project/app/src/main/res/layout/activity_register.xml" value="0.15" />
       </map>
     </option>
   </component>

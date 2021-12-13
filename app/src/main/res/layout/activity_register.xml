@@ -20,20 +20,46 @@
         app:layout_constraintVertical_bias="0.110000014"
          />
 
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/reg_email_out"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
         android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="33dp"
+        app:errorEnabled="true"
+        app:layout_constraintBottom_toTopOf="@+id/reg_email_out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/reg_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+
+            android:layout_marginEnd="40dp"
+            android:hint="Email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/reg_email_out"
+        android:layout_width="386dp"
+        android:layout_height="81dp"
+
+        android:layout_margin="10dp"
+        app:errorEnabled="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo"
-        app:layout_constraintVertical_bias="0.0"
-        app:errorEnabled="true">
+        app:layout_constraintVertical_bias="0.166">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/reg_email"
@@ -52,13 +78,13 @@
         android:layout_height="wrap_content"
 
         android:layout_margin="10dp"
+        app:errorEnabled="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reg_email_out"
-        app:layout_constraintVertical_bias="0.0"
-        app:errorEnabled="true">
+        app:layout_constraintVertical_bias="0.129">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/reg_password"
@@ -67,10 +93,9 @@
             android:layout_marginStart="40dp"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="40dp"
-            android:inputType="textPassword"
-            android:hint="Password" />
+            android:hint="Password"
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
-
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/reg_confirmpwd_out"
@@ -78,13 +103,13 @@
         android:layout_height="wrap_content"
 
         android:layout_margin="10dp"
+        app:errorEnabled="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reg_password_out"
-        app:layout_constraintVertical_bias="0.0"
-        app:errorEnabled="true">
+        app:layout_constraintVertical_bias="0.088">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/reg_confirmpwd"
@@ -93,10 +118,9 @@
             android:layout_marginStart="40dp"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="40dp"
-            android:inputType="textPassword"
-            android:hint="Confirm Password" />
+            android:hint="Confirm Password"
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
-
 
     <Button
         android:id="@+id/reg_button"
@@ -113,7 +137,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reg_confirmpwd_out"
-        app:layout_constraintVertical_bias="0.099" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/reg_Login"
@@ -123,10 +147,9 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reg_button"
-        app:layout_constraintVertical_bias="0.142" />
+        app:layout_constraintVertical_bias="0.409" />
 
     <ProgressBar
         android:id="@+id/reg_progress"
@@ -136,8 +159,10 @@
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reg_Login" />
+        app:layout_constraintTop_toBottomOf="@+id/reg_Login"
+        app:layout_constraintVertical_bias="0.838" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
