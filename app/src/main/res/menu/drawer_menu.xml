@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_add"
+            android:icon="@drawable/add"
+            android:title="Ajouter un Trajet" />
+        <item
+            android:id="@+id/nav_trajet"
+            android:icon="@drawable/car"
+            android:title="Mes trajets" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/search"
+            android:title="Chercher un Trajet" />
+        <item
+            android:id="@+id/nav_rate"
+            android:icon="@drawable/star"
+            android:title="Evaluer un Trajet" />
+
+        <item
+            android:id="@+id/nav_stat"
+            android:icon="@drawable/statistic"
+            android:title="Statistiques"/>
+        <item
+            android:id="@+id/nav_quitter"
+            android:icon="@drawable/exit"
+            android:title="Quitter"/>
+
+
+
+    </group>
+
+
+</menu>

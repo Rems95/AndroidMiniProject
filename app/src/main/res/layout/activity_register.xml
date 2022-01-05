@@ -22,69 +22,67 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/reg_email_out"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="386dp"
 
+        android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="50dp"
         android:layout_marginEnd="9dp"
-        android:layout_marginBottom="33dp"
+        android:layout_marginBottom="245dp"
         app:errorEnabled="true"
-        app:layout_constraintBottom_toTopOf="@+id/reg_email_out"
+        app:layout_constraintBottom_toTopOf="@+id/reg_password_out"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/reg_email"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginStart="40dp"
             android:layout_marginTop="40dp"
 
             android:layout_marginEnd="40dp"
             android:hint="Email" />
     </com.google.android.material.textfield.TextInputLayout>
-
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/reg_email_out"
+        android:id="@+id/reg_name_out"
         android:layout_width="386dp"
-        android:layout_height="81dp"
 
+        android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="245dp"
         app:errorEnabled="true"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/reg_password_out"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.157"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo"
-        app:layout_constraintVertical_bias="0.166">
+        app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/reg_email"
+            android:id="@+id/reg_name"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginStart="40dp"
             android:layout_marginTop="40dp"
 
             android:layout_marginEnd="40dp"
-            android:hint="Email" />
+            android:hint="Full Name" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/reg_password_out"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
 
         android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         app:errorEnabled="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reg_email_out"
-        app:layout_constraintVertical_bias="0.129">
+        app:layout_constraintTop_toBottomOf="@+id/reg_email_out">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/reg_password"
@@ -103,6 +101,8 @@
         android:layout_height="wrap_content"
 
         android:layout_margin="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
         app:errorEnabled="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -129,6 +129,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/custombuttonblackoval"
         android:text="Register"
         android:textColor="#ffffff"

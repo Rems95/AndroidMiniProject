@@ -21,15 +21,19 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.regex.Pattern;
 
 public class activity_register extends AppCompatActivity {
-    TextInputEditText email,password,confirmpwd;
+    TextInputEditText email,password,confirmpwd,fullname;
     Button register;
     TextView alrlogin,guest;
     FirebaseAuth fAuth;
     ProgressBar progressbar;
+    FirebaseFirestore db;
 
 
 
@@ -43,8 +47,11 @@ public class activity_register extends AppCompatActivity {
         confirmpwd = findViewById(R.id.reg_confirmpwd);
         register = findViewById(R.id.reg_button);
         alrlogin = findViewById(R.id.reg_Login);
+        fullname=findViewById(R.id.reg_name);
 
         fAuth = FirebaseAuth.getInstance();
+        db = FirebaseFirestore.getInstance();
+
         progressbar = findViewById(R.id.reg_progress);
 
         alrlogin.setOnClickListener(new View.OnClickListener() {
@@ -77,6 +84,7 @@ public class activity_register extends AppCompatActivity {
             String mPassword = password.getText().toString().trim();
 
             String mCPassword = confirmpwd.getText().toString().trim();
+            String Name = fullname.getText().toString().trim();
 
             email.setText("");
             email.setHint("Email");
@@ -95,6 +103,10 @@ public class activity_register extends AppCompatActivity {
                     if(task.isSuccessful()){
 
                         FirebaseUser user = fAuth.getCurrentUser();
+                        Map<String, Object> map = new HashMap<>();
+                        map.put("fullname", "" + Name);
+                        db.collection("users").document(user.getUid().toString()).set(map);
+
                         user.sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {
