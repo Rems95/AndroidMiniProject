@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -14,6 +15,11 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+
+import android.content.Context;
+import android.location.LocationListener;
+import android.location.LocationManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -33,15 +39,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class MainActivity extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener{
+public class MainActivity extends AppCompatActivity  implements   NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawerLayout;
     NavigationView navigationView;
     TextView nav_mail,nav_name;
     FirebaseAuth fAuth;
     String name,mail;
+    protected LocationManager locationManager;
+    protected LocationListener locationListener;
 
 
-
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,7 +65,8 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
                 R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-
+        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+       // locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, this)
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         View headerView = navigationView.getHeaderView(0);
         nav_mail=headerView.findViewById(R.id.nav_mail);
@@ -101,6 +110,8 @@ public class MainActivity extends AppCompatActivity  implements NavigationView.O
             fragment.setArguments(bundle);
 
         } else if (id == R.id.nav_add) {
+            fragment =new AddTrajetFragment();
+
         } else if (id == R.id.nav_trajet) {
         } else if (id == R.id.nav_search) {}
          else if (id == R.id.nav_rate) {}
