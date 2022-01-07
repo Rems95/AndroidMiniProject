@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".API">
+
+    <AutoCompleteTextView
+        android:id="@+id/autostart"
+        android:layout_width="194dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="220dp"
+        android:layout_weight="15"
+        android:hint="Start" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoend"
+        android:layout_width="190dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="213dp"
+        android:layout_marginBottom="529dp"
+        android:layout_weight="15"
+        android:hint="End" />
+</LinearLayout>

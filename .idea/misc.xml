@@ -7,6 +7,7 @@
         <entry key="..\:/Users/K-chan/Desktop/Android Project/app/src/main/res/layout/activity_login.xml" value="0.8104838709677419" />
         <entry key="..\:/Users/K-chan/Desktop/Android Project/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/drawable/circle.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/drawable/custom_button_design.xml" value="0.1287037037037037" />
         <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/drawable/grad.xml" value="0.21614583333333334" />
         <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/drawable/ic_chat.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.1" />
@@ -15,17 +16,22 @@
         <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/drawable/ic_profile.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/drawable/side_nav_bar.xml" value="0.18055555555555555" />
         <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/layout/activity_main2.xml" value="0.1" />
         <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/layout/activity_register.xml" value="0.22" />
         <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/layout/activity_sidebar.xml" value="0.1" />
         <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/layout/app_bar_sidebar.xml" value="0.1716485507246377" />
         <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/layout/content_sidebar.xml" value="0.1" />
-        <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/layout/fragment_add_trajet.xml" value="0.12" />
+        <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/layout/fragment_add_trajet.xml" value="0.22" />
         <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/layout/fragment_gallery.xml" value="0.1716485507246377" />
         <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/layout/fragment_home.xml" value="0.1716485507246377" />
+        <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/layout/fragment_mes_trajet.xml" value="0.16927083333333334" />
         <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/layout/fragment_profile.xml" value="0.1840277777777778" />
         <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/layout/fragment_slideshow.xml" value="0.1716485507246377" />
+        <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/layout/item_design_my_pool_recycler.xml" value="0.16927083333333334" />
         <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/layout/nav_header.xml" value="0.4466666666666667" />
         <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/layout/nav_header_sidebar.xml" value="0.1716485507246377" />
+        <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/layout/singlerow.xml" value="0.16927083333333334" />
         <entry key="..\:/Users/karin/AndroidStudioProjects/AndroidMiniProject/app/src/main/res/menu/drawer_menu.xml" value="0.1" />
       </map>
     </option>

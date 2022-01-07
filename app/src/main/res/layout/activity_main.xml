@@ -18,7 +18,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/purple_200"
+            android:background="@color/purple_700"
             android:elevation="5dp"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
@@ -26,7 +26,44 @@
         <FrameLayout
             android:id="@+id/fragment_container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/lin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/purple_700"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:text="BIENVENUE SUR !!"
+                    android:textAlignment="center"
+                    android:textColor="#0DB4EF"
+                    android:textSize="30dp" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="238dp"
+                    app:srcCompat="@drawable/img" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="381dp"
+                    android:layout_height="127dp"
+                    android:text="DISPONIBLE POUR TOUS VOS TRAJETS!!"
+                    android:textAlignment="center"
+                    android:textColor="#0DB4EF"
+                    android:textSize="30dp" />
+            </LinearLayout>
+        </FrameLayout>
 
     </LinearLayout>
 
@@ -36,6 +73,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:headerLayout="@layout/nav_header"
-        app:menu="@menu/drawer_menu" />
+        app:menu="@menu/drawer_menu" >
+
+    </com.google.android.material.navigation.NavigationView>
 
 </androidx.drawerlayout.widget.DrawerLayout>
